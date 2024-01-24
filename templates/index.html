@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width-device, initial-scale=1.0">
+    <title>Self Clear Temp</title>
+</head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<body>
+    <!--
+    <div class="banner">
+      <img img src="{{ url_for('static', filename='img/new-Year.gif') }}">  
+    </div>
+    -->
+    <div class="container">
+        <div class="time">
+            <h1></h1>
+        </div>
+		<h1 class="title">&#128640 Clear temp System &#128640 </h1>
+        <div>
+            <img class="image-logo" src="{{ url_for('static', filename='img/ignite.jpg') }}" alt="Welcome Logo">
+        </div>
+        <div>
+            <input type="text" id="valueInput" placeholder="กรอก Computername ตรงนี้จ้า">
+            <div style="margin-bottom: 20px;"></div>
+            <button id="sendButton">กดเพื่อเผาขยะ &#128128</button>
+            <p id="statusMessage" style="font-weight:bold"></p>
+            <p id="timer"></p>
+        </div>
+        
+
+    </div>
+    <p class="copyright">&#169; Powered by MIT Huatimbore</p>
+    <p class="copyright">"Donate snacks to support frontline workers in MIT. &#128513;"</p>
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
